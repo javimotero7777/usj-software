@@ -1,5 +1,7 @@
 /*
- * Implements the problem of triangle calcuation
+ * receives as input: lenghtA,B and C 
+ * what it returns: Invalid triangle or sides differnets
+ * Types: Equilateral, Isosceles and Scalene
  */
 
 var INVALID_ARGUMENTS = 'The arguments were not valid';
