@@ -29,25 +29,10 @@ function getTriangleType(lengthA, lengthB, lengthC) {
     } else { // All sides different = scalene
       if ( (a==b) && (b==c)) {
         type = EQUILATERAL;
-          // After triangle type is calculated
-        gtag('event', 'triangle_calculated', {
-        'triangle_type': triangleType,  // e.g., 'EQUILATERAL'
-        'timestamp': new Date().toISOString()
-        });
       } else if ( (a==b) || (b==c) || (a==c)) {
         type = ISOSCELES;
-          // After triangle type is calculated
-        gtag('event', 'triangle_calculated', {
-        'triangle_type': triangleType,  // e.g., 'EQUILATERAL'
-        'timestamp': new Date().toISOString()
-        });
       } else {
         type = SCALENE;
-          // After triangle type is calculated
-        gtag('event', 'triangle_calculated', {
-        'triangle_type': triangleType,  // e.g., 'EQUILATERAL'
-        'timestamp': new Date().toISOString()
-        });
       }
     }
   }
